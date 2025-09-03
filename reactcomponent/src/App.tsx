@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/dashboard/Home';
 import Profile from './pages/SignUp/SignUp';
@@ -6,9 +5,9 @@ import Settings from './pages/settings/Settings';
 import Signup from './pages/SignUp/SignUp';
 
 const App = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  // const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-  const toggleSidebar = () => setIsSidebarOpen(prev => !prev);
+  // const toggleSidebar = () => setIsSidebarOpen(prev => !prev);
 
   return (
     // 👇 Important: React app only runs under /app
