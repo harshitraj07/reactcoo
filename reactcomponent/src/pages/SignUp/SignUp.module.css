@@ -1,0 +1,387 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+overflow-x: hidden;
+}
+
+/* Color variables */
+:root {
+  --primary: #4361ee;
+  --primary-light: #4895ef;
+  --primary-dark: #3a0ca3;
+  --secondary: #f72585;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --gray: #6c757d;
+  --gray-light: #e9ecef;
+  --success: #4cc9f0;
+  --danger: #f72585;
+  --warning: #f8961e;
+}
+
+/* Full viewport container */
+.signupContainer {
+  margin-top: 3rem;
+  width: 100vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Split layout - takes full width */
+.splitLayout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Left Side - exactly 50% */
+.leftSide {
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+  flex: 1;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftContent {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leftContent h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.leftContent p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.features {
+  margin: 2.5rem 0;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+.featureIcon {
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.illustration {
+  margin-top: 3rem;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.illustrationImage {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* Right Side - exactly 50% */
+.rightSide {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.formContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.signupCard {
+  width: 100%;
+  max-width: 450px;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.signupHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.signupHeader h2 {
+  color: var(--dark);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.signupHeader p {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.successMessage {
+  background-color: rgba(76, 201, 240, 0.2);
+  color: var(--dark);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 1rem;
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+.formInput {
+  width: 100%;
+  padding: 0.9rem 1rem 0.9rem 2.5rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.inputError {
+  border-color: var(--danger);
+}
+
+.inputError:focus {
+  box-shadow: 0 0 0 3px rgba(248, 37, 133, 0.2);
+}
+
+.errorText {
+  color: var(--danger);
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--gray);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submitButton {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton:disabled {
+  background-color: var(--gray-light);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.loginRedirect {
+  text-align: center;
+  margin: 1.5rem 0;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.loginRedirect a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.loginRedirect a:hover {
+  text-decoration: underline;
+}
+
+.socialSignup {
+  margin-top: 2rem;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.divider::before {
+  margin-right: 1rem;
+}
+
+.divider::after {
+  margin-left: 1rem;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socialButton {
+  background: none;
+  border: 1px solid var(--gray-light);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.socialButton:hover {
+  background-color: var(--gray-light);
+  transform: translateY(-2px);
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .splitLayout {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .leftSide, 
+  .rightSide {
+    width: 100%;
+    height: auto;
+    flex: none;
+  }
+  
+  .leftContent {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .formContainer {
+    padding: 2rem 1rem;
+  }
+  
+  .illustration {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .leftContent h2 {
+    font-size: 1.8rem;
+  }
+  
+  .signupCard {
+    padding: 0;
+  }
+  
+  .formInput {
+    padding: 0.8rem 1rem 0.8rem 2.2rem;
+  }
+}
+.checkboxLabel {
+  font-size: 0.9rem;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.checkboxLabel input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.formInput[type="date"],
+.formInput select {
+  appearance: none;
+  background-color: white;
+}

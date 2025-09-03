@@ -1,0 +1,3353 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Meta setup -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="decription" content="">
+    <meta name="author" content="Asif sharker">
+    <!-- Title -->
+    <title>Welcome</title>
+    <!-- Fav Icon -->
+    <link rel="icon" href="img/fav.png" />
+    <!-- font-awssome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Include aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Include carousel -->
+    <!-- <link rel="stylesheet" href="css/owl.carousel.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Include Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            color: #fff;
+            letter-spacing: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: Montserrat, sans-serif;
+            font-size: 17px;
+            font-weight: 500;
+            background: #FFFFFF;
+            color: #000;
+        }
+
+        a,
+        button {
+            transition: all .2s ease;
+            -webkit-transition: all .2s ease;
+            -moz-transition: all .2s ease;
+        }
+
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: 0;
+        }
+
+        label {
+            margin-bottom: 0;
+        }
+
+        ::selection {
+            color: white;
+            background: #ff7675;
+        }
+
+        ::-webkit-selection {
+            color: white;
+            background: #ff7675;
+        }
+
+        ::-moz-selection {
+            color: white;
+            background: #ff7675;
+        }
+
+        .scrolltotop {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px 20px 0 0;
+            background: linear-gradient(90deg, #FF6B6B 14.9%, #FF8E53 84.62%) !important;
+            display: block;
+            text-align: center;
+            padding-top: 8px;
+            font-size: 22px;
+            color: #ffffff;
+            position: fixed;
+            right: 5px;
+            bottom: 5px;
+            display: none;
+            transition: 0.2s all ease;
+            -webkit-transition: 0.2s all ease;
+            -moz-transition: 0.2s all ease;
+        }
+
+        .scrolltotop:hover {
+            background: #000;
+            color: #fff;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+            -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+            -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+        }
+
+        .container {
+            max-width: 1250px;
+        }
+
+        /*==== nev area start===== */
+
+        header {
+            width: 100%;
+            padding: 25px 0;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: 999999999;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 200px;
+            display: inline-block;
+            margin-right: 50px;
+        }
+
+        .menu-item ul li a {
+            font-size: 16px;
+            font-weight: 500;
+            color: #141413;
+            display: inline-block;
+            padding: 10px 15px;
+            text-transform: capitalize;
+            transition: .3s;
+        }
+
+        .menu-item ul li a:hover {
+            color: #000;
+        }
+
+        .menu-bar {
+            display: none;
+        }
+
+        .menu-bar a {
+            font-size: 30px;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .menu-btn ul {
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+        }
+
+        .menu-btn a {
+            font-size: 16px;
+            font-weight: 500;
+            display: inline-block;
+            padding: 7px 12px;
+            border-radius: 5px;
+            color: #fff;
+            text-transform: capitalize;
+            transition: .2s;
+        }
+
+        .menu-btn ul li:nth-child(1) a {
+            border: 1px solid #FF6B6B;
+            color: #000;
+        }
+
+        .menu-btn ul li:nth-child(2) a {
+            background: linear-gradient(90deg, #FF6B6B 14.9%, #FF8E53 84.62%) !important;
+        }
+
+        .menu-btn ul li:nth-child(3) a {
+            border: 1px solid #FF6B6B;
+            color: #000;
+        }
+
+        .menu-btn a:hover {
+            background-color: transparent;
+            background: linear-gradient(90deg, #ff6666 14.9%, #f88446 84.62%);
+            color: #fff !important;
+        }
+
+        .monbile-menu-btn ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 0 10px;
+        }
+
+        .monbile-menu-btn ul li:nth-child(3) {
+            grid-column: span 2;
+        }
+
+        .monbile-menu-btn ul li a {
+            font-size: 16px;
+            font-weight: 500;
+            background: linear-gradient(90deg, #FF6B6B 14.9%, #FF8E53 84.62%);
+            display: inline-block;
+            padding: 7px 12px;
+            border-radius: 5px;
+            color: #fff;
+            text-transform: capitalize;
+            transition: .2s;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        .monbile-menu-btn ul li a:hover {
+            background-color: transparent;
+            background: linear-gradient(90deg, #ff6666 14.9%, #f88446 84.62%);
+        }
+
+        /*==== nev area end===== */
+
+        /*==== sticky-nev start=== */
+
+        .fixed-menu {
+            left: 0;
+            top: 0;
+            position: fixed;
+            top: 0;
+            animation: slide-down 0.5s !important;
+            left: 0;
+            right: 0;
+            z-index: 250;
+            transition: .10s;
+        }
+
+        .fixed-menu .menu-bar a {
+            color: #000 !important;
+        }
+
+        .fixed-menu nav {
+            background: rgba(255, 255, 255, 0.74);
+            backdrop-filter: blur(5px);
+            border-radius: 30px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 10px 15px;
+        }
+
+        .fixed-menu nav .menu-btn ul li a {
+            border-radius: 30px;
+        }
+
+        @keyframes slide-down {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /*==== sticky-nev end=== */
+
+        /* ====offcanvas manu start===== */
+
+        .offcanvas-header {
+            background-color: #fffdfd;
+            padding: 10px 10px;
+        }
+
+        .offcanvas-header h5 img {
+            max-width: 150px;
+        }
+
+        .offcanvas-body {
+            background-image: url(https://i.ibb.co/FLv8Y5G4/bg2.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            padding: 0px !important;
+        }
+
+        .clloss-x {
+            font-size: 25px;
+            cursor: pointer;
+            color: #000;
+        }
+
+        .clloss-x:hover {
+            color: #000 !important;
+        }
+
+        .offcanvas-start {
+            top: 0;
+            left: 0;
+            width: 80%;
+            z-index: 11111111111111;
+        }
+
+        .mobile-menu-item ul li a {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            transition: .2s;
+            padding: 15px 20px;
+            display: block;
+            transition: .2s;
+            text-transform: uppercase;
+        }
+
+        .mobile-menu-item ul li a:hover {
+            background-color: #333333;
+            color: #fff;
+            background: linear-gradient(90deg, #FF6B6B 14.9%, #FF8E53 84.62%);
+        }
+
+        .m-active {
+            background: linear-gradient(90deg, #FF6B6B 14.9%, #FF8E53 84.62%) !important;
+            color: #fff !important;
+        }
+
+        .mobile-menu-item ul li a i {
+            font-size: 20px;
+            margin-right: 15px;
+        }
+
+        /* ====offcanvas manu end===== */
+
+        /* =============== */
+
+        .custom-btn {
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+            outline: none;
+        }
+
+        /* 7 */
+
+        .btn-7 {
+            background: linear-gradient(90deg, #FF6B6B 14.9%, #FF8E53 84.62%);
+            line-height: 42px;
+            padding: 0;
+            border: none;
+        }
+
+        .btn-7 span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .btn-7:before,
+        .btn-7:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: 0;
+            background: rgba(251, 75, 2, 1);
+            /* box-shadow:
+            -7px -7px 20px 0px rgba(255,255,255,.9),
+            -4px -4px 5px 0px rgba(255,255,255,.9),
+            7px 7px 20px 0px rgba(0,0,0,.2),
+            4px 4px 5px 0px rgba(0,0,0,.3); */
+            transition: all 0.3s ease;
+        }
+
+        .btn-7:before {
+            height: 0%;
+            width: 2px;
+        }
+
+        .btn-7:after {
+            width: 0%;
+            height: 2px;
+        }
+
+        .btn-7:hover {
+            color: #fb4b02;
+            background: #fff;
+        }
+
+        .btn-7:hover:before {
+            height: 100%;
+        }
+
+        .btn-7:hover:after {
+            width: 100%;
+        }
+
+        .btn-7 span:before,
+        .btn-7 span:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            background: #fb4b02;
+            box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9), -4px -4px 5px 0px rgba(255, 255, 255, .9), 7px 7px 20px 0px rgba(0, 0, 0, .2), 4px 4px 5px 0px rgba(0, 0, 0, .3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-7 span:before {
+            width: 2px;
+            height: 0%;
+        }
+
+        .btn-7 span:after {
+            height: 2px;
+            width: 0%;
+        }
+
+        .btn-7 span:hover:before {
+            height: 100%;
+        }
+
+        .btn-7 span:hover:after {
+            width: 100%;
+        }
+
+        /* ================ */
+
+        .btn-8 {
+            background: #ffff;
+            color: #000;
+            line-height: 42px;
+            padding: 0;
+            border: none;
+        }
+
+        .btn-8 span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .btn-8:before,
+        .btn-8:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: 0;
+            background: rgba(251, 75, 2, 1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-8:before {
+            height: 0%;
+            width: 2px;
+        }
+
+        .btn-8:after {
+            width: 0%;
+            height: 2px;
+        }
+
+        .btn-8:hover {
+            color: #fb4b02;
+            background: #fff;
+        }
+
+        .btn-8:hover:before {
+            height: 100%;
+        }
+
+        .btn-8:hover:after {
+            width: 100%;
+        }
+
+        .btn-8 span:before,
+        .btn-8 span:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            background: #fb4b02;
+            box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9), -4px -4px 5px 0px rgba(255, 255, 255, .9), 7px 7px 20px 0px rgba(0, 0, 0, .2), 4px 4px 5px 0px rgba(0, 0, 0, .3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-8 span:before {
+            width: 2px;
+            height: 0%;
+        }
+
+        .btn-8 span:after {
+            height: 2px;
+            width: 0%;
+        }
+
+        .btn-8 span:hover:before {
+            height: 100%;
+        }
+
+        .btn-8 span:hover:after {
+            width: 100%;
+        }
+
+
+        /* grolink section */
+
+        .grolink {
+            background: linear-gradient(to right, #F9F0EB, #F4EBE4);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ffe5d4;
+            color: #FD803D;
+            font-size: 14px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .title span {
+            color: #FD803D;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            max-width: 650px;
+            margin: 0 auto 40px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .feature-box {
+            text-align: center;
+            max-width: 260px;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 15px;
+            background: #FD803D;
+            color: #fff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+        .feature-box h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .feature-box p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #FD803D, #f3ac86);
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #e25a00;
+        }
+
+        .btn-secondary {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background: #f1f1f1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 26px;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+
+            .feature-box {
+                max-width: 100%;
+            }
+        }
+
+
+        /* ========== */
+
+        .hero {
+            padding: 200px 0;
+            background: #f5f5f5;
+            position: relative;
+            overflow: hidden;
+            /* filter: blur(4rem); */
+            width: 100%;
+            background-image: url(img/bg-colors-scaled-1.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .blur-filter {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            display: none;
+        }
+
+        .blur-filter h1 {
+            color: #333;
+            font-size: 2rem;
+            font-family: sans-serif;
+        }
+
+        /* =====hero-area-start===== */
+
+        .hero-area {
+            background: linear-gradient(90deg, #953EF2 33.17%, #5843E5 72.6%);
+            padding: 130px 50px;
+        }
+
+        .hero .container {
+            max-width: 1350px;
+            margin: auto;
+        }
+
+        .hero-left h2 {
+            color: #222A2F;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: -.02em;
+            text-transform: capitalize;
+            font-family: Montserrat, sans-serif;
+            font-size: 35px;
+            font-weight: 800;
+            text-decoration: none;
+            margin-bottom: 20px;
+            line-height: 50px;
+        }
+
+        .hero-left p {
+            color: #222A2F;
+            letter-spacing: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: Montserrat, sans-serif;
+            font-size: 17px;
+            font-weight: 500;
+            text-decoration: none;
+            margin-bottom: 48px;
+        }
+
+        .hero-left ul {
+            display: flex;
+            align-items: center;
+            gap: 0 30px;
+            /* justify-content: center; */
+        }
+
+        .hero-rt {
+            text-align: right;
+        }
+
+        .main-content {
+            position: relative;
+        }
+
+        .main-content .owl-theme .custom-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+        }
+
+        .main-content .owl-theme .custom-nav .owl-prev,
+        .main-content .owl-theme .custom-nav .owl-next {
+            position: absolute;
+            color: inherit;
+            background: none;
+            border: none;
+            z-index: 100;
+        }
+
+        .main-content .owl-theme .custom-nav .owl-prev i,
+        .main-content .owl-theme .custom-nav .owl-next i {
+            width: 30px;
+            height: 30px;
+            display: block;
+            border-radius: 50%;
+            font-size: 15px;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            background: linear-gradient(90deg, #FF6B6B 14.9%, #FF8E53 84.62%);
+        }
+
+        .main-content .owl-theme .custom-nav .owl-prev {
+            left: 0;
+        }
+
+        .main-content .owl-theme .custom-nav .owl-next {
+            left: 180px;
+        }
+
+        .main-content .owl-theme .owl-dots .owl-dot.active span,
+        .main-content .owl-theme .owl-dots .owl-dot:hover span {
+            background: linear-gradient(90deg, #FF6B6B 14.9%, #FF8E53 84.62%);
+        }
+
+        .main-content .owl-theme .owl-dots {
+            position: absolute;
+            left: 50px;
+            bottom: -19px;
+        }
+
+        .main-content .owl-theme .owl-dots .owl-dot span {
+            width: 30px;
+            height: 5px;
+            margin: 5px 7px;
+            background: #fff;
+            display: block;
+            -webkit-backface-visibility: visible;
+            transition: opacity 200ms ease;
+            border-radius: 30px;
+        }
+
+        .main-content .owl-theme .owl-dots {
+            padding-top: 54px;
+        }
+
+        /* ================= */
+
+        .brand-slider {
+            background: #222A2F;
+            padding: 0 0 50px;
+        }
+
+        .brand-slider p {
+            color: #fff;
+            margin-bottom: 20px;
+            padding-top: 30px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: auto;
+        }
+
+        .swiper-slide img {
+            width: 120px !important;
+            max-width: 100%;
+        }
+
+        .swiper-slide {
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .swiper-free-mode {
+            >.swiper-wrapper {
+                transition-timing-function: linear;
+                margin: 0 auto;
+            }
+        }
+
+        /* process section */
+        .process-title {
+            margin-top: 1rem;
+
+        }
+
+
+
+        .process-title h1 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.2;
+
+
+        }
+
+        .process-title span {
+            color: orange;
+
+
+        }
+
+        .procee-section-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            gap: 40px;
+        }
+
+        /* Left side flowchart */
+        .procee-section-flowchart {
+            flex: 1;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .procee-section-step img {
+            align-self: center;
+            width: 100%;
+            height: auto;
+            max-height: 60vh;
+        }
+
+
+
+        /* Right side text */
+        .procee-section-text-side {
+            flex: 1;
+        }
+
+        .procee-section-text-side h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .procee-section-text-side h1 span {
+            color: orange;
+        }
+
+        .procee-section-text-side p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .procee-section-testimonial {
+            background: #F5E0C3;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .procee-section-testimonial strong {
+            display: block;
+            margin-top: 10px;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .procee-section-cta-btn {
+            display: inline-block;
+            background: orange;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .procee-section-cta-btn:hover {
+            background: darkorange;
+            color: white;
+        }
+
+        @media(max-width: 900px) {
+            .procee-section-step img {
+                align-self: center;
+                width: 100%;
+                height: auto;
+                max-height: 60vh;
+            }
+
+            .procee-section-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .procee-section-flowchart,
+            .procee-section-text-side {
+                max-width: 600px;
+            }
+        }
+
+
+
+        /* why creator love us */
+        .why-creators {
+            background: linear-gradient(to right, #f2dec7, #eddac5);
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .why-creators h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
+        .why-creators h2 span {
+            color: #e63946;
+            /* red heart color */
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            background: transparent;
+            text-align: left;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature i {
+            font-size: 28px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .feature h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #444;
+        }
+
+        @media (max-width: 768px) {
+            .why-creators h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+
+        /* creator service section */
+        .creators-section {
+            background: linear-gradient(to right, #F9F0EB, #F4EBE4);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .creators-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .creators-title span {
+            color: #FD803D;
+        }
+
+        .creators-subtitle {
+            font-size: 16px;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        .creators-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .creators-feature-box {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .creators-feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .creators-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .creators-feature-box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .creators-feature-box p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .creators-title {
+                font-size: 26px;
+            }
+
+            .creators-subtitle {
+                font-size: 15px;
+            }
+        }
+
+
+
+        /* turn your passion into profit */
+
+        .profits-section {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(to bottom, #F4EBE4 0%, #fff9f6);
+
+            /* background: #fff9f6; */
+        }
+
+        .profits-badge {
+            display: inline-block;
+            background: #ffe7da;
+            color: #fc6a03;
+            font-size: 13px;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        .profits-title {
+            font-size: 34px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .profits-title span {
+            color: #fc6a03;
+        }
+
+        .profits-subtitle {
+            font-size: 16px;
+            color: #555;
+            max-width: 750px;
+            margin: 0 auto 50px;
+            line-height: 1.6;
+        }
+
+        .profits-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .profits-feature-box {
+            background: #fff;
+            border-radius: 14px;
+            padding: 30px 24px;
+            text-align: left;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profits-feature-box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .profits-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff2ea;
+            margin-bottom: 18px;
+            font-size: 26px;
+            color: #fc6a03;
+        }
+
+        .profits-feature-box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .profits-feature-box p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profits-title {
+                font-size: 26px;
+            }
+
+            .profits-subtitle {
+                font-size: 15px;
+            }
+        }
+
+        /* get started with grofeed */
+
+        .steps-section {
+            padding: 70px 20px;
+            text-align: center;
+            background: #fff;
+        }
+
+        .steps-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .steps-title span {
+            color: #fc6a03;
+        }
+
+        .steps-subtitle {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 50px;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto 40px;
+        }
+
+        .steps-box {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .steps-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            margin: 0 auto 14px;
+            background: #fff3ec;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: #fc6a03;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .steps-number {
+            width: 38px;
+            height: 38px;
+            background: #fc9246;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: -20px auto 10px;
+            font-size: 14px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .steps-box h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .steps-box p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            max-width: 260px;
+            margin: 0 auto;
+        }
+
+        .steps-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #FD803D, #f3ac86);
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .steps-btn:hover {
+            background: #f7924e;
+            color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .steps-title {
+                font-size: 24px;
+            }
+
+            .steps-subtitle {
+                font-size: 14px;
+            }
+        }
+
+
+        /* ===== Voices of Our Creators  &  Brand start==== */
+
+        .voice_of-our_creators {
+            padding: 40px 0 80px;
+        }
+
+        .voice_of-title {}
+
+        .voice_of-title h2 {
+            color: #222A2F;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: -.02em;
+            text-transform: capitalize;
+            font-size: 30px;
+            font-weight: 800;
+            text-decoration: none;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 0 15px;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+
+        .client_testimonial-inner-box {
+            border-radius: 13.744px;
+            border: 0.916px solid #ffffff3a;
+            background: linear-gradient(179deg, rgba(255, 255, 255, 0.08) 0.85%, rgba(9, 24, 47, 0.08) 99.15%);
+            padding: 16px 17px;
+            background-image: url(https://i.ibb.co/FLv8Y5G4/bg2.webp);
+            background-repeat: no-repeat;
+        }
+
+        .client_testimonial-box {
+            border-radius: 13.744px;
+            padding: 10px;
+            margin-bottom: 22px;
+        }
+
+        .client_testimonial-box img {
+            width: 25px !important;
+            margin-bottom: 8px;
+        }
+
+        .client_testimonial-box p {
+            color: #000;
+            font-size: 14.66px;
+            font-style: normal;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .ts-name-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ts-user-name h2 {
+            color: #000;
+            font-size: 16.493px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .ts-user-name span {
+            color: rgb(0, 0, 0);
+            font-size: 14.66px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 21.467px;
+            /* 146.428% */
+        }
+
+        .ts-img img {
+            width: 54.06px;
+            height: 54.06px;
+            flex-shrink: 0;
+            border-radius: 50%;
+        }
+
+        .main-content2 {
+            position: relative;
+        }
+
+        .main-content2 .owl-theme .custom-nav {
+            position: absolute;
+            top: 43%;
+            left: 0;
+            right: 0;
+        }
+
+        .main-content2 .owl-theme .custom-nav .owl-prev,
+        .main-content2 .owl-theme .custom-nav .owl-next {
+            position: absolute;
+            color: inherit;
+            background: none;
+            border: none;
+            z-index: 100;
+        }
+
+        .main-content2 .owl-theme .custom-nav .owl-prev i,
+        .main-content2 .owl-theme .custom-nav .owl-next i {
+            font-size: 20px;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            background-color: #000;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .main-content2 .owl-theme .custom-nav .owl-prev {
+            left: -55px;
+        }
+
+        .main-content2 .owl-theme .custom-nav .owl-next {
+            right: -55px;
+        }
+
+
+
+        /*========== faq area ======== */
+
+        .faq-area {
+            padding: 80px 0;
+        }
+
+        .faq-title h2 {
+            color: #222A2F;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: -.02em;
+            text-transform: capitalize;
+            font-size: 35px;
+            font-weight: 800;
+            text-decoration: none;
+            margin-bottom: 60px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .focus span {
+            color: #FD803D;
+        }
+
+        .accordion {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .accordion-item {
+            border: 2px solid #000 !important;
+            padding: 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            border-radius: 10px !important;
+        }
+
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .accordion-icon {
+            font-size: 1.5rem;
+            border: 2px solid #000;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-content {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 200px;
+            /* Adjust as needed */
+            margin-top: 10px;
+        }
+
+        .accordion-item.active .accordion-icon::after {
+            content: '-';
+        }
+
+        .accordion-icon::after {
+            content: '+';
+        }
+
+        /* Gain unlimited access start */
+
+        .gain-unlimited-access-area {
+            padding: 69px 0 30px;
+        }
+
+        .gain-left-title h2 {
+            color: #000;
+            font-family: "Roboto Slab";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+
+        .gain-left-title p {
+            color: #4273F0;
+            font-family: "Roboto Slab";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 35px;
+        }
+
+        .gain-left-inner {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px 20px;
+            padding-right: 50px;
+        }
+
+        .gain-left-item {
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid #FFF;
+            background: #ECF1ED;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            display: flex;
+            align-items: center;
+            gap: 0px 17px;
+        }
+
+        .gain-left-item span img {
+            width: 50px;
+        }
+
+        .gain-left-item span {
+            display: block;
+            width: 50px;
+        }
+
+        .gain-left-item h4 {
+            color: #46785C;
+            font-family: "Roboto Slab";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .gain-right-item {
+            margin-top: 40px;
+        }
+
+        .chat-icon {
+            position: fixed;
+            z-index: 9999999;
+            right: 10px;
+            bottom: 50px;
+        }
+
+        .chat-icon a {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(90deg, #FF6B6B 14.9%, #FF8E53 84.62%) !important;
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            font-size: 22px;
+            border-radius: 50%;
+            color: #fff;
+            position: relative;
+        }
+
+        /* ===grofeed-features-area=== */
+
+        .grofeed-features-area {
+            padding: 40px 0;
+        }
+
+        .grofeed-features-title h2 {
+            color: #442CDC;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-bottom: 10px;
+            text-align: center;
+            letter-spacing: -.02em;
+            line-height: 139%;
+        }
+
+        .grofeed-features-title p {
+            color: #000;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .tabs {
+            width: 100%;
+            display: inline-block;
+        }
+
+        .tab-Features-link {
+            display: flex;
+            padding: 20px 18px;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 12px;
+            border: 1px solid #FFF;
+            background: #FFF;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+            margin-bottom: 28px;
+            gap: 0 10px;
+            margin-top: 20px;
+            border: 1px solid #222A2F;
+        }
+
+        .tab-Features-link li {
+            list-style: none;
+        }
+
+        .tab-Features-link li a {
+            display: block;
+            background: #fff;
+            color: #222A2F;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-align: center;
+            transition: all linear 0.15s;
+            outline: 1px solid #000;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 10px 40px;
+        }
+
+        .tab-Features-link a:hover {
+            background: #4273F0;
+            outline: 1px solid #CCFFE2;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            transition: all linear 0.15s;
+        }
+
+        .tab-Features-link li.active a,
+        .tab-Features-link li.active a:hover {
+            background: #4273F0;
+            color: #fff;
+            outline: none;
+        }
+
+        .tab-Features-link li a i {
+            font-size: 15px;
+        }
+
+        .tab {
+            display: none;
+        }
+
+        .tab.active {
+            display: block;
+        }
+
+        .Features-content .tab {
+            border-radius: 22px;
+            border-radius: 12px;
+            padding: 20px 22px;
+        }
+
+        #tab1 {
+            background: #FFD9D9;
+        }
+
+        #tab2 {
+            background: #E4FFFE;
+        }
+
+        #tab3 {
+            background: #FFD9D9;
+        }
+
+        #tab4 {
+            background: #E4FFFE;
+        }
+
+        #tab5 {
+            background: #FFD9D9;
+        }
+
+        #tab6 {
+            background: #E4FFFE;
+        }
+
+        .tab-Features-left-content {
+            padding-right: 20px;
+        }
+
+        .tab-Features-left-content h2 {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: #222a2f;
+            font-weight: 700;
+        }
+
+        .tab-Features-left-content p {
+            font-size: 18px;
+            color: #222a2f;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .main-content .owl-theme .owl-dots {
+            position: absolute;
+            left: 42px;
+            bottom: -10px;
+        }
+
+        .tab-Features-right-img {
+            text-align: right;
+        }
+
+        /* ====unlock-influence-area=== */
+
+        .unlock-influence-area {
+            padding: 0 0 50px 0;
+        }
+
+        .unlock-influence-title h2 {
+            color: #000;
+            font-family: "Roboto Slab";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .tab-links2 {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tab-links2 li {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .tab-links2 li a {
+            display: block;
+            border-radius: 7px;
+            border: 1px solid #4273F0;
+            background: #ECF1ED;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            color: #000;
+            font-family: "Roboto Slab";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 15px 20px;
+        }
+
+        .tab-links2 a:hover {
+            background: #4273F0;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+        }
+
+        .tab-links2 li.active a,
+        .tab-links2 li.active a:hover {
+            background: #4273F0;
+            color: #fff;
+        }
+
+        .tab-another-link li a {
+            display: block;
+            border-radius: 7px;
+            border: 1px solid #4273F0;
+            background: #ECF1ED;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            color: #000;
+            font-family: "Roboto Slab";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            transition: .3s;
+        }
+
+        .tab-another-link li a:hover {
+            background: #4273F0;
+            color: #fff;
+        }
+
+        .Unlock-btn {
+            margin-top: 50px;
+        }
+
+        .Unlock-btn a {
+            font-family: "Roboto Slab";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 12px;
+            color: #000;
+            display: inline-block;
+            padding: 15px 32px;
+            display: flex;
+            align-items: center;
+            gap: 0 8px;
+            transition: .3s;
+            border-radius: 12px;
+            background: #49CB97;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            width: 260px;
+            margin: auto;
+        }
+
+        .Unlock-btn a:hover {
+            color: #fff;
+            transform: scale(1.1);
+            background: rgb(39, 124, 90);
+        }
+
+        .Unlock-btn span {
+            margin-top: 3px;
+            display: flex;
+        }
+
+        .Unlock-btn a:hover svg path {
+            fill: #fff;
+            transition: .3s;
+        }
+
+        /* ===========end css============== */
+
+        /*
+            ====================================
+            Medium Screen - Others
+            ====================================
+            */
+
+        @media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+        /*
+            ====================================
+            Small Screen - Tablate
+            ====================================
+            */
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .menu-logo {
+                display: block !important;
+            }
+
+            .menu-bar {
+                display: block;
+            }
+
+            .menu-item {
+                display: none !important;
+            }
+
+            .menu-btn {
+                display: none !important;
+            }
+
+            .the__complet-items {
+                margin-bottom: 30px;
+            }
+
+            .hero-left ul {
+                margin-bottom: 50px;
+            }
+
+            .tab-Features-link li a {
+                display: block;
+                background: #fff;
+                color: #000;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-align: center;
+                transition: all linear 0.15s;
+                outline: 1px solid #000;
+                border-radius: 10px;
+                display: inline-block;
+                padding: 8px 10px;
+            }
+
+            .tab-Features-link {
+                display: flex;
+                padding: 13px 7px;
+            }
+
+            .how-does-work-item span::after {
+                z-index: -1;
+            }
+
+            .get-titles h2 {
+                color: #000;
+                font-size: 22px;
+            }
+
+        }
+
+        /*
+            ====================================
+            Small Screen - Mobile
+            ====================================
+            */
+
+        @media screen and (max-width: 767px) {
+            header {
+                padding: 20px 0;
+            }
+
+            .menu-logo {
+                display: block !important;
+            }
+
+            .menu-bar {
+                display: block;
+            }
+
+            .menu-item {
+                display: none !important;
+            }
+
+            .menu-btn {
+                display: none !important;
+            }
+
+            .hero {
+                padding: 112px 0 72px;
+            }
+
+            .hero-left h2 {
+                font-size: 20px;
+                font-weight: 800;
+                text-decoration: none;
+                margin-bottom: 17px;
+                line-height: 31px;
+            }
+
+            .hero-left h2 br {
+                display: none;
+            }
+
+            .hero-left p {
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+
+            .hero-left p br {
+                display: none;
+            }
+
+            .hero-rt {
+                margin-bottom: 47px;
+                margin-top: 38px;
+            }
+
+            .fixed-menu nav {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                padding: 5px 13px;
+            }
+
+            .brands_scale_wrapper {
+                margin: auto;
+                padding-top: 49px;
+            }
+
+            .tab-Features-link {
+                display: block;
+                padding: 20px 18px;
+                align-items: center;
+                text-align: center;
+            }
+
+            .tab-Features-link li a {
+                width: 235px;
+                margin-bottom: 12px;
+            }
+
+            .tab-Features-right-content h2 {
+                margin-top: 28px;
+                margin-bottom: 20px;
+            }
+
+            .the__complet-title h2 {
+                font-size: 19px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .brands_scale-content p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .brands_scale-content h2 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-top: 37px;
+                margin-bottom: 9px;
+            }
+
+            .join-grofeed_areaa {
+                padding: 83px 0 25px;
+            }
+
+            .grofeed-features-title h2 {
+                color: #442CDC;
+                font-size: 20px;
+            }
+
+            .grofeed-features-title p {
+                color: #000;
+                font-size: 16px;
+            }
+
+            .headingText {
+                color: #D4DD59;
+                font-size: 20px;
+            }
+
+            .desText {
+                color: #fff !important;
+                font-size: 16px;
+            }
+
+            .Influencers__area {
+                padding: 57px 0;
+            }
+
+            .tab-Features-left-content {
+                margin-bottom: 34px;
+            }
+
+            .tab-Features-left-content h2 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+
+            .tab-Features-left-content p {
+                font-size: 16px;
+            }
+
+            .Effortless-Brand-title h2 {
+                font-size: 21px;
+                margin-bottom: 45px;
+            }
+
+            .Effortless-Brand-Growth-box-content {
+                margin-bottom: 20px;
+            }
+
+            .voice_of-title h2 {
+                font-size: 15px;
+            }
+
+            .voice_of-title h2 img {
+                width: 30px;
+            }
+
+            .joinus-sectiosn {
+                padding: 59px 17px;
+            }
+
+            .joinus-title h2 {
+                font-size: 24px;
+                font-weight: 800;
+                text-decoration: none;
+                margin-bottom: 20px;
+                line-height: 32px;
+                text-align: center;
+            }
+
+            .joinus-sectiosn ul {
+                display: block;
+            }
+
+            .joinus-sectiosn ul li {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .the__complet-title ul {
+                display: block;
+            }
+
+            .the__complet-title ul li {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .the__complet-items {
+                margin-bottom: 30px;
+            }
+
+            .faq-area {
+                padding: 52px 0;
+            }
+
+            .faq-title h2 {
+                font-size: 20px;
+                font-weight: 800;
+                text-decoration: none;
+                margin-bottom: 50px;
+                line-height: 37px;
+                text-align: center;
+            }
+
+            .accordion-item {
+                border: 2px solid #000 !important;
+                padding: 14px;
+            }
+
+            .accordion-header {
+                font-size: 15px;
+            }
+
+            .the__complet-items h3 {
+                font-size: 20px;
+            }
+
+            .Effortless-Brand-Growth-box-content h2 {
+                font-size: 20px;
+            }
+
+            .joinus-title h2 {
+                font-size: 20px;
+            }
+
+            .main-content2 .owl-theme .custom-nav .owl-prev,
+            .main-content2 .owl-theme .custom-nav .owl-next {
+                display: none;
+            }
+        }
+    </style>
+    <main class="main-wrapper-page ">
+
+        <div class="chat-icon">
+            <!-- <a href="#"><img src="img/chat-left-dots.svg" alt="chat-icon"></a> -->
+            <a href="#"><i class="fa-brands fa-rocketchat"></i></a>
+        </div>
+
+        <header>
+            <div class="container ">
+                <nav>
+                    <div class="menu-logo">
+                        <a href="#" class="logo"><img src="img/logo.png" class="img-fluid" alt="logo"></a>
+                    </div>
+                    <div class="menu-item">
+                        <ul class="d-flex">
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">pricing</a></li>
+                            <li><a href="#">Book A demo</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-btn">
+                        <ul>
+                            <li><a href="/signup">SIGNUP</a></li>
+                            <li><a href="/profile"> Brand login</a></li>
+                            <li><a href="#"> Creator login</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-bar">
+                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- offcanvas-area-start -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><a href="index.html"><img src="img/logo.png"
+                            class="img-fluid" alt="logo"></a></h5>
+                <a class="clloss-x" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-x"></i></a>
+            </div>
+            <div class="offcanvas-body">
+                <div class="mobile-menu-item">
+                    <ul>
+                        <li><a href="#" class="m-active">about</a></li>
+                        <li><a href="#">pricing</a></li>
+                        <li><a href="#">Book A demo</a></li>
+                        <li><a href="#">price</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">carer </a></li>
+
+                    </ul>
+                </div>
+
+                <div class="monbile-menu-btn">
+                    <ul>
+                        <li><a href="/signup">SIGNUP</a></li>
+                        <li><a href="/profile"> Brand login</a></li>
+                        <li><a href="#"> Creator login</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- offcanvas-area-end -->
+
+
+        <!-- hero-area-start -->
+        <section class="hero">
+            <div class="container">
+                <div class="main-content">
+                    <div id="owl-csel1" class="owl-carousel owl-theme">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-7">
+                                    <div class="hero-slider-content">
+                                        <div class="hero-left">
+                                            <h1><span style="color: #FD803D;">Launch, Sell and Grow</span><br>
+                                                Your Digital Products <br>
+
+                                            </h1>
+                                            <p>Launch courses, create payment pages,offer mentorship, manage
+                                                subscriptions, and host webinars. Everything creators need to buid a
+                                                thiriving digital business
+                                            </p>
+                                            <ul>
+                                                <li class="buttons">
+                                                    <a href="#" class="btn-primary">Start Building Today </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-5">
+                                    <div class="hero-rt">
+                                        <img src="https://i.ibb.co/CsJpRzSg/mweb-2.webp" class="img-fluid" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-7">
+                                    <div class="hero-slider-content">
+                                        <div class="hero-left">
+                                            <h1><span style="color: #FD803D;">Launch, Sell and Grow</span><br>
+                                                Your Digital Products <br>
+
+                                            </h1>
+                                            <p>Launch courses, create payment pages,offer mentorship, manage
+                                                subscriptions, and host webinars. Everything creators need to buid a
+                                                thiriving digital business
+                                            </p>
+                                            <ul>
+                                                <li class="buttons">
+                                                    <a href="#" class="btn-primary">Start Building Today </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-5">
+                                    <div class="hero-rt">
+                                        <img src="https://i.ibb.co/5WZC56WG/tab-img-2.png" class="img-fluid" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-7">
+                                    <div class="hero-slider-content">
+                                        <div class="hero-left">
+                                            <h1> <span style="color: #FD803D;">Launch, Sell and Grow</span><br>
+                                                Your Digital Products <br>
+
+                                            </h1>
+                                            <p>Launch courses, create payment pages,offer mentorship, manage
+                                                subscriptions, and host webinars. Everything creators need to buid a
+                                                thiriving digital business
+                                            </p>
+                                            <ul>
+                                                <li class="buttons">
+                                                    <a href="#" class="btn-primary">Start Building Today </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-5">
+                                    <div class="hero-rt">
+                                        <img src="https://i.ibb.co/CxQym2J/hero-rt.png" class="img-fluid" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted by Brands, Powered by Creators start -->
+        <section class="brand-slider">
+            <div class="container">
+                <p>Trusted by Brands, Powered by Creators</p>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide"><img src="https://i.ibb.co/XZ44qtpb/cl1.png" alt="Slide 1"></div>
+                    <div class="swiper-slide"><img src="https://i.ibb.co/4g3Swsn6/cl2.png" alt="Slide 2"></div>
+                    <div class="swiper-slide"><img src="https://i.ibb.co/XZ44qtpb/cl1.png" alt="Slide 1"></div>
+                    <div class="swiper-slide"><img src="https://i.ibb.co/4g3Swsn6/cl2.png" alt="Slide 2"></div>
+                    <div class="swiper-slide"><img src="https://i.ibb.co/XZ44qtpb/cl1.png" alt="Slide 1"></div>
+                    <div class="swiper-slide"><img src="https://i.ibb.co/4g3Swsn6/cl2.png" alt="Slide 2"></div>
+                    <div class="swiper-slide"><img src="https://i.ibb.co/XZ44qtpb/cl1.png" alt="Slide 1"></div>
+                    <div class="swiper-slide"><img src="https://i.ibb.co/4g3Swsn6/cl2.png" alt="Slide 2"></div>
+                    <div class="swiper-slide"><img src="https://i.ibb.co/XZ44qtpb/cl1.png" alt="Slide 1"></div>
+                    <div class="swiper-slide"><img src="https://i.ibb.co/4g3Swsn6/cl2.png" alt="Slide 2"></div>
+                    <div class="swiper-slide"><img src="https://i.ibb.co/XZ44qtpb/cl1.png" alt="Slide 1"></div>
+                    <div class="swiper-slide"><img src="https://i.ibb.co/4g3Swsn6/cl2.png" alt="Slide 2"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Trusted by Brands, Powered by Creators end -->
+
+        <!-- brands scale area start -->
+        <div class="brands_scale_wrapper">
+            <div class="container">
+                <div class="the__complet-title pb-5">
+                    <h2 data-aos="fade-up" data-aos-delay="200">Our platform where creators grow and brands scale.</h2>
+                    <p data-aos="fade-up" data-aos-delay="300">
+                        #BrandXCreator #GrowWithCreators #MonetizeYourContent
+                    </p>
+                </div>
+                <div class="cird cird1">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="brands_scale-img">
+                                <img src="https://i.ibb.co/99W59M00/img-gl.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="brands_scale-content">
+                                <h2>Join Our Platform to Accelerate
+                                    Your Brand’s Growth
+                                </h2>
+                                <p>Connect with top creators, streamline sales,
+                                    and scale your brand effortlessly.
+                                </p>
+                                <a href="#" class="custom-btn btn-8"><span>Join as a Brand</span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cird cird2">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="brands_scale-img">
+                                <img src="https://i.ibb.co/99W59M00/img-gl.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="brands_scale-content">
+                                <h2>Join Our Platform to Accelerate
+                                    Your Brand’s Growth
+                                </h2>
+                                <p>Connect with top creators, streamline sales,
+                                    and scale your brand effortlessly.
+                                </p>
+                                <a href="#" class="custom-btn btn-8"><span>Join as a Brand</span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cird cird3">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="brands_scale-img">
+                                <img src="https://i.ibb.co/99W59M00/img-gl.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="brands_scale-content">
+                                <h2>Join Our Platform to Accelerate
+                                    Your Brand’s Growth
+                                </h2>
+                                <p>Connect with top creators, streamline sales,
+                                    and scale your brand effortlessly.
+                                </p>
+                                <a href="#" class="custom-btn btn-8"><span>Join as a Brand</span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cird cird4">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="brands_scale-img">
+                                <img src="https://i.ibb.co/99W59M00/img-gl.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="brands_scale-content">
+                                <h2>Join Our Platform to Accelerate
+                                    Your Brand’s Growth
+                                </h2>
+                                <p>Connect with top creators, streamline sales,
+                                    and scale your brand effortlessly.
+                                </p>
+                                <a href="#" class="custom-btn btn-8"><span>Join as a Brand</span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cird cird5">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="brands_scale-img">
+                                <img src="img/img-gl.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="brands_scale-content">
+                                <h2>Join Our Platform to Accelerate
+                                    Your Brand’s Growth
+                                </h2>
+                                <p>Connect with top creators, streamline sales,
+                                    and scale your brand effortlessly.
+                                </p>
+                                <a href="#" class="custom-btn btn-8"><span>Join as a Brand</span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brands scale area end -->
+
+        <!-- process section -->
+
+        <div class="process-title">
+            <h1>Onboarding <span>Flow</span></h1>
+
+
+
+            <div class="procee-section-container">
+                <!-- Left side: Flowchart -->
+                <div class="procee-section-flowchart">
+                    <div class="process_imgContainer">
+                        <div class="procee-section-step">
+                            <img src="https://i.postimg.cc/ZqzDkC9S/download.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side: Text and CTA -->
+                <div class="procee-section-text-side">
+                    <h1>You can start selling within <span>60 seconds</span>.</h1>
+                    <p>Join more than 5000 creators who’ve sold over $5 million in courses and workshops business.</p>
+                    <div class="procee-section-testimonial">
+                        "My onboarding experience on TagMango was quite smooth, took less than a minute!"
+                        <strong>- Shashwat Amrev, Stock Market Edges</strong>
+                    </div>
+                    <a href="#" class="procee-section-cta-btn">Get Started for FREE Now!</a>
+                </div>
+            </div>
+        </div>
+
+        <!--why creator love us  -->
+        <section class="why-creators">
+            <h2>Why creators <span>❤️</span> Grofeed</h2>
+
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Save Money and Time</h3>
+                    <p>Say goodbye to the hassle of piecing together multiple tools for your courses and workshops. Our
+                        platform can help you <b>reduce your expenses by up to 80%.</b></p>
+                </div>
+
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Boost Your Conversions</h3>
+                    <p>Our platform is designed to help you promote and sell your courses and workshops more
+                        effectively, leading to a <b>20% increase in conversions</b> on average.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Anti-Piracy Protection</h3>
+                    <p>Our anti-piracy feature automatically takes down any pirated content that appears online,
+                        ensuring that your content remains secure and protected.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <h3>DRM Security</h3>
+                    <p>Our DRM security uses state-of-the-art technology to ensure that all your video content remains
+                        protected from unauthorized access or distribution.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Dedicated Account Manager</h3>
+                    <p>We provide a dedicated content strategist tailored to your needs, to support you every step of
+                        the way, from launching your courses to scaling your business.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our support team is knowledgeable and experienced and is dedicated to ensuring that you have
+                        access to the help you need whenever you need it.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- creator service section -->
+        <section class="creators-section">
+            <h2 class="creators-title">Everything creators need in <span>one platform</span></h2>
+            <p class="creators-subtitle">
+                Stop juggling multiple tools. Build, market, and scale your digital business with ease.
+            </p>
+
+            <div class="creators-features">
+                <div class="creators-feature-box">
+                    <div class="creators-icon">💻</div>
+                    <h3>Launch Courses</h3>
+                    <p>Create comprehensive online courses with video lessons and student tracking</p>
+                </div>
+                <div class="creators-feature-box">
+                    <div class="creators-icon">💳</div>
+                    <h3>Payment Pages</h3>
+                    <p>Build beautiful checkout pages and sell digital products seamlessly</p>
+                </div>
+                <div class="creators-feature-box">
+                    <div class="creators-icon">👨‍🏫</div>
+                    <h3>1:1 Mentorship</h3>
+                    <p>Offer personalized coaching with built-in scheduling and video calls</p>
+                </div>
+                <div class="creators-feature-box">
+                    <div class="creators-icon">📱</div>
+                    <h3>Subscriptions</h3>
+                    <p>Create recurring revenue with flexible plans and member management</p>
+                </div>
+                <div class="creators-feature-box">
+                    <div class="creators-icon">🎥</div>
+                    <h3>Host Webinars</h3>
+                    <p>Engage audiences with live webinars and interactive features</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Grofeed Tools & Features start -->
+        <section class="grofeed-features-area">
+            <div class="container">
+                <div class="grofeed-features-title" data-aos="fade-up">
+                    <h2 data-aos="fade-up" data-aos-delay="300">Access Multiple Pre-Made Digital Products & Productivity
+                        Tools</h2>
+                    <p data-aos="fade-up" data-aos-delay="400">No coding needed – just plug, play, and scale your
+                        digital presence.</p>
+                </div>
+                <div class="tabs">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="200">
+                            <ul class="tab-links tab-Features-link">
+                                <li class="active"><a href="#tab1">Digital Product</a></li>
+                                <li><a href="#tab2">Coursces</a></li>
+                                <li><a href="#tab3">Subscription</a></li>
+                                <li><a href="#tab4">Events</a></li>
+                                <li><a href="#tab5">1 :1 Coaching</a></li>
+                                <li><a href="#tab6">Community</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-12 col-md-12" data-aos="fade-up">
+                            <div class="tab-content Features-content" data-aos="fade-up" data-aos-delay="300">
+                                <div id="tab1" class="tab active">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-left-content">
+                                                <h2>Maximize Your Earnings with Pay-to-View
+                                                    Content
+                                                </h2>
+                                                <p>Monetize exclusive content effortlessly, attract
+                                                    paying viewers, and boost your revenue with a
+                                                    secure and flexible pay-to-view system
+                                                </p>
+                                                <a href="#" class="custom-btn btn-7"><span>TRY IT NOW</span> </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-right-img">
+                                                <img src="https://i.ibb.co/5q1vn8s/tab.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="tab">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-left-content">
+                                                <h2>Maximize Your Earnings with Pay-to-View
+                                                    Content
+                                                </h2>
+                                                <p>Monetize exclusive content effortlessly, attract
+                                                    paying viewers, and boost your revenue with a
+                                                    secure and flexible pay-to-view system
+                                                </p>
+                                                <a href="#" class="custom-btn btn-7"><span>TRY IT NOW</span> </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-right-img">
+                                                <img src="https://i.ibb.co/5q1vn8s/tab.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab3" class="tab">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-left-content">
+                                                <h2>Maximize Your Earnings with Pay-to-View
+                                                    Content
+                                                </h2>
+                                                <p>Monetize exclusive content effortlessly, attract
+                                                    paying viewers, and boost your revenue with a
+                                                    secure and flexible pay-to-view system
+                                                </p>
+                                                <a href="#" class="custom-btn btn-7"><span>TRY IT NOW</span> </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-right-img">
+                                                <img src="https://i.ibb.co/5q1vn8s/tab.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab4" class="tab">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-left-content">
+                                                <h2>Maximize Your Earnings with Pay-to-View
+                                                    Content
+                                                </h2>
+                                                <p>Monetize exclusive content effortlessly, attract
+                                                    paying viewers, and boost your revenue with a
+                                                    secure and flexible pay-to-view system
+                                                </p>
+                                                <a href="#" class="custom-btn btn-7"><span>TRY IT NOW</span> </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-right-img">
+                                                <img src="https://i.ibb.co/5q1vn8s/tab.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab5" class="tab">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-left-content">
+                                                <h2>Maximize Your Earnings with Pay-to-View
+                                                    Content
+                                                </h2>
+                                                <p>Monetize exclusive content effortlessly, attract
+                                                    paying viewers, and boost your revenue with a
+                                                    secure and flexible pay-to-view system
+                                                </p>
+                                                <a href="#" class="custom-btn btn-7"><span>TRY IT NOW</span> </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-right-img">
+                                                <img src="https://i.ibb.co/5q1vn8s/tab.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab6" class="tab">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-left-content">
+                                                <h2>Maximize Your Earnings with Pay-to-View
+                                                    Content
+                                                </h2>
+                                                <p>Monetize exclusive content effortlessly, attract
+                                                    paying viewers, and boost your revenue with a
+                                                    secure and flexible pay-to-view system
+                                                </p>
+                                                <a href="#" class="custom-btn btn-7"><span>TRY IT NOW</span> </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <div class="tab-Features-right-img">
+                                                <img src="https://i.ibb.co/5q1vn8s/tab.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Grofeed Tools & Features end -->
+        <!-- grolink section -->
+        <section class="grolink">
+            <div class="badge">🚀 New Platform Launch</div>
+            <h2 class="title">Introducing <span>Grolink</span></h2>
+            <p class="subtitle">
+                The social e-commerce platform designed for brands and influencers to collaborate,
+                showcase products, and drive sales through authentic partnerships.
+            </p>
+
+            <div class="features">
+                <div class="feature-box">
+                    <div class="icon">👥</div>
+                    <h3>Brand Partnerships</h3>
+                    <p>Connect with top influencers and authentic content creators</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">📈</div>
+                    <h3>Social Commerce</h3>
+                    <p>Turn social media presence into direct sales channels</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">➡️</div>
+                    <h3>Seamless Integration</h3>
+                    <p>Easy setup with existing social media platforms</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn-primary">Get Started with Grolink →</button>
+                <!-- <button class="btn-secondary">Learn More</button> -->
+            </div>
+        </section>
+
+
+
+        <!-- turn your passion into profit -->
+
+
+        <section class="profits-section">
+            <div class="profits-badge">Transform Your Passion</div>
+            <h2 class="profits-title">Turn Your Passion Into <span>Profits</span></h2>
+            <p class="profits-subtitle">
+                Everything you need to monetize your expertise and build a thriving digital business.
+                From creation to customer management, we've got you covered.
+            </p>
+
+            <div class="profits-features">
+                <div class="profits-feature-box">
+                    <div class="profits-icon">📑</div>
+                    <h3>Unlimited Landing Pages</h3>
+                    <p>Create beautiful, high-converting landing pages for each of your products. No limits, no
+                        restrictions.</p>
+                </div>
+                <div class="profits-feature-box">
+                    <div class="profits-icon">👥</div>
+                    <h3>Customer Management</h3>
+                    <p>Keep track of your customers, their purchases, and engagement. Build lasting relationships that
+                        drive growth.</p>
+                </div>
+                <div class="profits-feature-box">
+                    <div class="profits-icon">📈</div>
+                    <h3>Business Growth Tools</h3>
+                    <p>Access analytics, marketing tools, and automation features to scale your business effortlessly.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- get started with grofeed -->
+        <section class="steps-section">
+            <h2 class="steps-title">How to get started with <span>Grofeed</span></h2>
+            <p class="steps-subtitle">
+                From idea to income in 4 simple steps. Join thousands of creators who are already earning with Grofeed.
+            </p>
+
+            <div class="steps-container">
+                <div class="steps-box">
+                    <div class="steps-icon">🚀</div>
+                    <div class="steps-number">01</div>
+                    <h3>Get Started</h3>
+                    <p>Sign up for your free 14-day trial. No credit card required to begin your journey.</p>
+                </div>
+
+                <div class="steps-box">
+                    <div class="steps-icon">👤</div>
+                    <div class="steps-number">02</div>
+                    <h3>Create Account</h3>
+                    <p>Set up your creator profile and customize your brand in just a few minutes.</p>
+                </div>
+
+                <div class="steps-box">
+                    <div class="steps-icon">💻</div>
+                    <div class="steps-number">03</div>
+                    <h3>Create Your First Product</h3>
+                    <p>Launch your course, digital product, or service using our intuitive builder tools.</p>
+                </div>
+
+                <div class="steps-box">
+                    <div class="steps-icon">☁️</div>
+                    <div class="steps-number">04</div>
+                    <h3>Share & Start Earning</h3>
+                    <p>Get your unique link and start sharing. Watch your revenue grow in real-time.</p>
+                </div>
+            </div>
+
+            <a href="#" class="steps-btn">Start Your Free Trial Today</a>
+        </section>
+
+
+
+
+        <!-- Voices of Our Creators  &  Brand start  -->
+        <section class="voice_of-our_creators">
+            <div class="container">
+                <div class="voice_of-title">
+                    <h2 data-aos="fade-up" data-aos-delay="200">Voices of Our <p class="focus"> <span>Creators &
+                                Brand</span></p>
+                    </h2>
+                </div>
+                <div class="voice_of-our_wrapper">
+                    <div class="main-content2">
+                        <div id="owl-csel2" class="owl-carousel owl-theme">
+                            <div class="rb-box">
+                                <div class="client_testimonial-inner-box">
+                                    <div class="client_testimonial-box">
+                                        <img src="https://i.ibb.co/1JMTZRM9/qut.png" class="img-fluid" alt="">
+                                        <p>Grofeed helped us grow fast with real creators, better ROI, and easy
+                                            tracking. A must-have for any brand!" </p>
+                                        <ul class="star_ d-flex">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ts-name-box">
+                                        <div class="ts-user-name">
+                                            <h2>Payel Roy</h2>
+                                            <span> Instagram Creators </span>
+                                        </div>
+                                        <div class="ts-img"><img src="https://i.ibb.co/RGZmZVPM/user1.png"
+                                                class="img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rb-box">
+                                <div class="client_testimonial-inner-box">
+                                    <div class="client_testimonial-box">
+                                        <img src="https://i.ibb.co/1JMTZRM9/qut.png" class="img-fluid" alt="">
+                                        <p>Grofeed helped us grow fast with real creators, better ROI, and easy
+                                            tracking. A must-have for any brand!" </p>
+                                        <ul class="star_ d-flex">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ts-name-box">
+                                        <div class="ts-user-name">
+                                            <h2>Payel Roy</h2>
+                                            <span> Instagram Creators </span>
+                                        </div>
+                                        <div class="ts-img"><img src="https://i.ibb.co/RGZmZVPM/user1.png"
+                                                class="img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rb-box">
+                                <div class="client_testimonial-inner-box">
+                                    <div class="client_testimonial-box">
+                                        <img src="https://i.ibb.co/1JMTZRM9/qut.png" class="img-fluid" alt="">
+                                        <p>Grofeed helped us grow fast with real creators, better ROI, and easy
+                                            tracking. A must-have for any brand!" </p>
+                                        <ul class="star_ d-flex">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ts-name-box">
+                                        <div class="ts-user-name">
+                                            <h2>Payel Roy</h2>
+                                            <span> Instagram Creators </span>
+                                        </div>
+                                        <div class="ts-img"><img src="https://i.ibb.co/RGZmZVPM/user1.png"
+                                                class="img-fluid" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-theme">
+                            <div class="owl-controls">
+                                <div class="custom-nav owl-nav"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Voices of Our Creators  &  Brand end -->
+
+
+
+        <!-- faq start  -->
+        <section class="faq-area">
+            <div class="container">
+                <div class="faq-title">
+                    <h2 data-aos="fade-up" data-aos-delay="200">Frequently Asked <p class="focus">
+                            <span>Questions</span>
+                        </p>
+                    </h2>
+                </div>
+                <div class="faq-wrapper">
+                    <div class="accordion">
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="accordion-header">
+                                <span>What is Grofeed and how does it work?</span>
+                                <div class="accordion-icon"></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Grofeed connects brands with creators and influencers to promote and sell products
+                                    through curated shop pages and performance-based campaigns</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="accordion-header">
+                                <span> Who can join Grofeed?</span>
+                                <div class="accordion-icon"></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Any brand, creator, or influencer looking to grow, monetize, or promote products can
+                                    register and get started.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="accordion-header">
+                                <span>How do creators earn money?</span>
+                                <div class="accordion-icon"></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Creators earn commissions by sharing products within their community and driving real
+                                    sales through their unique shop pages.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="accordion-header">
+                                <span>How do creators earn money?</span>
+                                <div class="accordion-icon"></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Creators earn commissions by sharing products within their community and driving real
+                                    sales through their unique shop pages.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="accordion-header">
+                                <span>How is Grofeed different from other platforms?</span>
+                                <div class="accordion-icon"></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Grofeed focuses on ROI-driven influencer marketing with real engagement, lower return
+                                    rates, and data transparency for both brands and creators.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="accordion-header">
+                                <span> Is there any cost to join Grofeed?</span>
+                                <div class="accordion-icon"></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Joining Grofeed is free for creators. Brands may choose from flexible pricing options
+                                    based on their campaign needs.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="accordion-header">
+                                <span> How do creators receive payouts?</span>
+                                <div class="accordion-icon"></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Creators receive their earnings directly to their linked bank accounts or preferred
+                                    payment
+                                    method. Payouts are processed weekly or monthly, based on completed sales and the
+                                    platform’s payout cycle. A detailed earnings report is available in your dashboard
+                                    at all times.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq end -->
+    </main>
+    <!-- Main jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/owl.carousel.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/aos.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+
+                // Scroll to Top
+                jQuery('.scrolltotop').click(function () {
+                    jQuery('html').animate({ 'scrollTop': '0px' }, 400);
+                    return false;
+                });
+
+                jQuery(window).scroll(function () {
+                    var upto = jQuery(window).scrollTop();
+                    if (upto > 500) {
+                        jQuery('.scrolltotop').fadeIn();
+                    } else {
+                        jQuery('.scrolltotop').fadeOut();
+                    }
+                });
+
+
+                $(window).scroll(function () {
+                    var height = $(window).scrollTop();
+                    if (height >= 100) {
+                        $('header').addClass('fixed-menu');
+                    } else {
+                        $('header').removeClass('fixed-menu');
+                    }
+                });
+
+
+                $("#owl-csel1").owlCarousel({
+                    items: 1,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    startPosition: 0,
+                    rtl: false,
+                    loop: true,
+                    margin: 15,
+                    dots: true,
+                    nav: true,
+                    animateOut: 'fadeOut',
+                    animateIn: 'fadeIn',   // Only fade-in effect
+                    smartSpeed: 1000,      // Controls fade speed
+                    navText: [
+                        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+                        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+                    ],
+                    navContainer: '.main-content .custom-nav',
+                    responsive: {
+                        0: { items: 1 },
+                        767: { items: 1 },
+                        1200: { items: 1 }
+                    }
+                });
+
+                $("#owl-csel2").owlCarousel({
+                    items: 3,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    startPosition: 0,
+                    rtl: false,
+                    loop: true,
+                    smartSpeed: 800,
+                    margin: 15,
+                    dots: true,
+                    nav: true,
+                    navText: [
+                        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+                        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+                    ],
+                    navContainer: '.main-content2 .custom-nav',
+                    responsive: {
+                        0: {
+                            items: 1.1,
+                        },
+                        767: {
+                            items: 2.5,
+                        },
+                        1200: {
+                            items: 3,
+                        }
+                    }
+
+                });
+
+
+
+
+
+
+
+
+                jQuery('.tabs .tab-links a').on('click', function (e) {
+                    var currentAttrValue = jQuery(this).attr('href');
+                    // Show/Hide Tabs
+                    // Show/Hide Tabs
+                    jQuery('.tabs ' + currentAttrValue).siblings().hide();
+                    jQuery('.tabs ' + currentAttrValue).delay().show();
+                    // Change/remove current tab to active
+                    jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+                    e.preventDefault();
+                });
+
+
+
+            });
+        })(jQuery);
+
+        AOS.init({
+            duration: 1900,
+        })
+
+
+        // accordion
+
+        const accordionItems = document.querySelectorAll(".accordion-item");
+
+        accordionItems.forEach(item => {
+            const header = item.querySelector(".accordion-header");
+
+            header.addEventListener("click", () => {
+                accordionItems.forEach(i => {
+                    if (i !== item) {
+                        i.classList.remove("active");
+                    }
+                });
+
+                item.classList.toggle("active");
+            });
+        });
+
+
+
+        // =================
+
+        const swiper = new Swiper(".swiper", {
+            speed: 5000,
+            direction: "horizontal",
+            loop: true,
+            slidesPerView: 9,
+            freeMode: true,
+            zoom: true,
+            keyboard: true,
+            pagination: false,
+            navigation: false,
+
+            autoplay: {
+                delay: 0
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 2.8
+                },
+                550: {
+                    slidesPerView: 2
+                },
+                1000: {
+                    slidesPerView: 9
+                }
+            }
+
+        });
+
+        // overlap
+
+        gsap.to(".cird1", {
+            scale: 0.95,
+            scrollTrigger: {
+                trigger: ".cird1",
+                start: "top 100px",
+                end: "bottom 100px",
+                scrub: true,
+            },
+        });
+        gsap.to(".cird2", {
+            scale: 0.95,
+            scrollTrigger: {
+                trigger: ".cird2",
+                start: "top 120px",
+                end: "bottom 120px",
+                scrub: true,
+            },
+        });
+        gsap.to(".cird3", {
+            scale: 0.95,
+            scrollTrigger: {
+                trigger: ".cird3",
+                start: "top 140px",
+                end: "bottom 140px",
+                scrub: true,
+            },
+        });
+        gsap.to(".cird4", {
+            scale: 0.95,
+            scrollTrigger: {
+                trigger: ".cird4",
+                start: "top 160px",
+                end: "bottom 160px",
+                scrub: true,
+            },
+        });
+        gsap.to(".cird5", {
+            scale: 0.95,
+            scrollTrigger: {
+                trigger: ".cird5",
+                start: "top 180px",
+                end: "bottom 180px",
+                scrub: true,
+            },
+        });
+
+
+    </script>
+    <!-- Fontawesome Script -->
+    <script src="https://kit.fontawesome.com/e7f2043049.js"></script>
+    <!-- Custom jQuery -->
+    <script src="js/scripts.js"></script>
+    <!-- Scroll-Top button -->
+    <a href="#" class="scrolltotop"><i class="fas fa-angle-up"></i></a>
+</body>
+
+</html>

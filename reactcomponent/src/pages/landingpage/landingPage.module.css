@@ -1,0 +1,54 @@
+/* LandingPage.module.css */
+
+.mainWrapperPage {
+  /* styles */
+}
+
+.header {
+  width: 100%;
+  padding: 25px 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999999999;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 200px;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.menuItem ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #141413;
+  display: inline-block;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+/* Continue with all other styles... */
+
+.hero {
+  padding: 200px 0;
+  background: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-image: url(https://i.ibb.co/FLv8Y5G4/bg2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  overflow: hidden;
+}
+
+/* And so on for all CSS rules */

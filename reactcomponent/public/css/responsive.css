@@ -1,0 +1,249 @@
+ /*
+            ====================================
+            Medium Screen - Others
+            ====================================
+            */
+
+            @media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+            /*
+            ====================================
+            Small Screen - Tablate
+            ====================================
+            */
+
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+                .the__complet-items{
+                    margin-bottom: 30px;
+                }
+                .hero-left ul  {
+                
+                margin-bottom: 50px;
+                    
+                }
+                .tab-Features-link li a {
+                    display: block;
+                    background: #fff;
+                    color: #000;
+
+            
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-align: center;
+                    transition: all linear 0.15s;
+                    outline: 1px solid #000;
+                    border-radius: 10px;
+                    display: inline-block;
+                    padding: 8px 10px;
+                }
+                .tab-Features-link {
+                    display: flex;
+                    padding: 13px 7px;
+                }
+                .how-does-work-item span::after {
+                    z-index: -1;
+                }
+                .get-titles h2 {
+                    color: #000;
+
+                    font-size: 22px;
+                }
+            }
+
+            /*
+            ====================================
+            Small Screen - Mobile
+            ====================================
+            */
+
+            @media screen and (max-width: 767px) {
+                .hero {
+            padding: 72px 0;
+                }
+                 .hero-left h2 {
+                font-size: 20px;
+                font-weight: 800;
+                text-decoration: none;
+                margin-bottom: 17px;
+                line-height: 31px;
+            }
+            .hero-left h2 br{
+                display: none;
+            }
+            .hero-left p {
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .hero-left p br{
+                    display: none;
+                }
+            
+            .hero-rt {
+                margin-bottom: 47px;
+                margin-top: 38px;
+            }
+
+
+            .brands_scale_wrapper {
+            margin: auto;
+            padding-top: 49px;
+            }
+
+
+
+
+
+
+                .tab-Features-link {
+                    display: block;
+                    padding: 20px 18px;
+                    align-items: center;
+                    text-align: center;
+                }
+                .tab-Features-link li a {
+                    width: 235px;
+                    margin-bottom: 12px;
+                }
+                .tab-Features-right-content h2 {
+                    margin-top: 28px;
+                    margin-bottom: 20px;
+                }
+            .the__complet-title h2 {
+
+            font-size: 19px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .brands_scale-content p{
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            .brands_scale-content h2 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-top: 37px;
+                margin-bottom: 9px;
+            }
+            .join-grofeed_areaa {
+                padding: 83px 0 25px;
+                
+
+            }
+            .grofeed-features-title h2 {
+            color: #442CDC;
+            font-size: 20px;
+            }
+            .grofeed-features-title p {
+            color: #000;
+            font-size: 16px;
+            }
+            .headingText {
+            color: #D4DD59;
+            font-size: 20px;
+            }
+            .desText {
+            color: #fff !important;
+            font-size: 16px;
+            }
+            .Influencers__area {
+            padding: 57px 0;
+            }
+
+            .tab-Features-left-content {
+                margin-bottom: 34px;
+            }
+            .tab-Features-left-content h2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            }
+            .tab-Features-left-content p {
+                font-size: 16px;
+            }
+            .Effortless-Brand-title h2 {
+
+                font-size: 21px;
+                margin-bottom: 45px;
+            }
+
+            .Effortless-Brand-Growth-box-content {
+                margin-bottom: 20px;
+            }
+            .voice_of-title h2 {
+            font-size: 15px;
+            }
+
+            .voice_of-title h2  img{
+                width: 30px;
+            }
+
+            .joinus-sectiosn {
+            padding: 59px 17px;
+            }
+
+            .joinus-title h2 {
+
+                font-size: 24px;
+                font-weight: 800;
+                text-decoration: none;
+                margin-bottom: 20px;
+                line-height: 32px;
+                text-align: center;
+            }
+            .joinus-sectiosn ul {
+                display: block;
+            }
+            .joinus-sectiosn ul li {
+            text-align: center;
+            margin-bottom: 20px;
+            }
+
+            .the__complet-title ul {
+                display: block;
+            }
+            .the__complet-title ul li {
+            text-align: center;
+            margin-bottom: 20px;
+            }
+            .the__complet-items{
+                margin-bottom: 30px;
+            }
+            .faq-area {
+                    padding: 52px 0;
+                }
+                .faq-title h2 {
+                font-size: 20px;
+                font-weight: 800;
+                text-decoration: none;
+                margin-bottom: 50px;
+                line-height: 37px;
+                text-align: center;
+            }
+            .accordion-item {
+            border: 2px solid #000 !important;
+            padding: 14px;
+            }
+            .accordion-header {
+            font-size: 15px;
+            }
+
+            .the__complet-items h3 {
+          
+            font-size: 20px;
+            }
+
+            .Effortless-Brand-Growth-box-content h2 {
+        
+            font-size: 20px;
+            }
+
+            .joinus-title h2 {
+                font-size: 20px;
+            }
+
+
+
+
+            }
