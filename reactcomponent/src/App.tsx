@@ -1,25 +1,30 @@
-// src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Profile from "./pages/SignUp/SignUp";
-import Signup from "./pages/SignUp/SignUp";
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Home from './pages/dashboard/Home';
+import Profile from './pages/SignUp/SignUp';
+import Settings from './pages/settings/Settings';
+import Signup from './pages/SignUp/SignUp';
 
-const RedirectToLanding = () => {
-  window.location.href = "/landing.html"; // ✅ goes straight to public/landing.html
-  return null;
-};
+const App = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-function App() {
+  const toggleSidebar = () => setIsSidebarOpen(prev => !prev);
+
   return (
-    <Router>
+    // 👇 Important: React app only runs under /app
+    <Router basename="/app">
       <Routes>
-        {/* ✅ this loads landing.html from public */}
-        <Route path="/" element={<RedirectToLanding />} />
+        {/* React app routes */}
+        <Route path="/" element={<Home />} />         {/* /app/ */}
+        <Route path="/profile" element={<Profile />} /> {/* /app/profile */}
+        <Route path="/signup" element={<Signup />} />   {/* /app/signup */}
+        <Route path="/settings" element={<Settings />} /> {/* /app/settings */}
 
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/signup" element={<Signup />} />
+        {/* fallback: if route not found, go back to Home */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
