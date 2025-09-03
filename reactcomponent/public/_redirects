@@ -1,5 +1,2 @@
-# Serve landing.html directly
 /landing.html   /landing.html   200
-
-# All other routes → React (index.html)
-/*   /index.html   200
+/*              /index.html     200
