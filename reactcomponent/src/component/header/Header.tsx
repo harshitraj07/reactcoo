@@ -1,31 +1,31 @@
-import styles from './Header.module.css';
+// import styles from './Header.module.css';
 
-const Header = ({ isOpen, toggleSidebar }) => {
-  return (
-    <div
-      className={styles.header}
-      style={{ marginLeft: isOpen ? '220px' : '60px' }} // Adjusts based on sidebar
-    >
-      <div className={styles.headerLeft}>
-      <button className={styles.toggleBtn} onClick={toggleSidebar}>
-        ☰
-      </button>
-      <div className={styles.logo}>🚀 <span>MyLogo</span></div></div>
-       <div className={styles.headerActions}>
-          <button className={styles.notificationButton}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-            </svg>
-            <span className={styles.notificationBadge}>3</span>
-          </button>
-          <div className={styles.userProfile}>
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User profile" />
-            <span>Sarah Johnson</span>
-          </div>
-        </div>
-    </div>
-  );
-};
+// const Header = ({ isOpen, toggleSidebar }) => {
+//   return (
+//     <div
+//       className={styles.header}
+//       style={{ marginLeft: isOpen ? '220px' : '60px' }} // Adjusts based on sidebar
+//     >
+//       <div className={styles.headerLeft}>
+//       <button className={styles.toggleBtn} onClick={toggleSidebar}>
+//         ☰
+//       </button>
+//       <div className={styles.logo}>🚀 <span>MyLogo</span></div></div>
+//        <div className={styles.headerActions}>
+//           <button className={styles.notificationButton}>
+//             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+//               <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+//               <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+//             </svg>
+//             <span className={styles.notificationBadge}>3</span>
+//           </button>
+//           <div className={styles.userProfile}>
+//             <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User profile" />
+//             <span>Sarah Johnson</span>
+//           </div>
+//         </div>
+//     </div>
+//   );
+// };
 
-export default Header;
+// export default Header;

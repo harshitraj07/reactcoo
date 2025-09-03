@@ -4,7 +4,7 @@ import styles from './LandingPage.module.css';
 const LandingPage: React.FC = () => {
   // Refs for various elements that need JavaScript functionality
   const owlCarousel1Ref = useRef<HTMLDivElement>(null);
-  const owlCarousel2Ref = useRef<HTMLDivElement>(null);
+  // const owlCarousel2Ref = useRef<HTMLDivElement>(null);
   const swiperRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
