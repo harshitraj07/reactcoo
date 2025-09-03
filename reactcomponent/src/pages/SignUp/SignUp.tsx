@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Signup.module.css";
+import styles from "./SignUp.module.css";
 import { FaUser, FaEnvelope, FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
 import { FaGoogle, FaFacebookF, FaTwitter } from "react-icons/fa";
 
