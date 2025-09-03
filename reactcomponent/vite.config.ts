@@ -3,8 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // ✅ ensures correct asset paths on Netlify
-  build: {
-    outDir: 'dist', // ✅ default but explicit
-  },
+  base: '/app/',  // React app served under /app
 })
