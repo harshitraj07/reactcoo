@@ -2248,18 +2248,27 @@
                     </div>
                     <div class="menu-item">
                         <ul class="d-flex">
-                            <li><a href="#">about</a></li>
+                            <li><a href="/">about</a></li>
                             <li><a href="#">pricing</a></li>
                             <li><a href="#">Book A demo</a></li>
                         </ul>
                     </div>
                     <div class="menu-btn">
                         <ul>
-                            <li><a href="/signup">SIGNUP</a></li>
-                            <li><a href="/profile"> Brand login</a></li>
-                            <li><a href="#"> Creator login</a></li>
+                            <li><a href="/Home">SIGNUP</a></li>
+                            <li><a href="#"> Brand login</a></li>
+                            <li><button id="signupBtn">Get started</button>
+</li>
+                            <li>
+                                <a href="http://localhost:5173/Signup" target="_blank">Creator
+                                    login
+                                </a>
+                            </li>
+
                         </ul>
+
                     </div>
+
                     <div class="menu-bar">
                         <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
                             aria-controls="offcanvasExample">
@@ -2293,8 +2302,8 @@
 
                 <div class="monbile-menu-btn">
                     <ul>
-                        <li><a href="/signup">SIGNUP</a></li>
-                        <li><a href="/profile"> Brand login</a></li>
+                        <li><a href="#">SIGNUP</a></li>
+                        <li><a href="#"> Brand login</a></li>
                         <li><a href="#"> Creator login</a></li>
                     </ul>
                 </div>
@@ -3113,8 +3122,6 @@
             </div>
         </section>
         <!-- faq end -->
-             <a href="/app/" class="enter-app-btn">Go to React App</a>
-
     </main>
     <!-- Main jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -3344,6 +3351,12 @@
 
 
     </script>
+    <script>
+  document.getElementById("signupBtn").addEventListener("click", () => {
+    // Send a message to parent window (index.html)
+    window.parent.postMessage({ action: "enterApp" }, "*");
+  });
+</script>
     <!-- Fontawesome Script -->
     <script src="https://kit.fontawesome.com/e7f2043049.js"></script>
     <!-- Custom jQuery -->
