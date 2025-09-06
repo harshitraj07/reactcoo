@@ -4,50 +4,50 @@
     <meta charset="UTF-8" />
     <title>Landing Page</title>
     <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
       #landing {
         height: 100vh;
-        /* flex: 1; */
-          overflow: hidden; /* child content won’t overflow */
-
+        overflow: hidden;
       }
-      body, html {
-       all: unset;
+      #root {
+        display: none; /* hide React app until user enters */
       }
-
     </style>
   </head>
   <body>
     <!-- Landing Content -->
     <div id="landing">
-      <!-- <h1>Welcome to My Website</h1>
-      <p>This is the landing page.</p> -->
-      <!-- <button id="enterApp">Enter App</button> -->
-          <iframe src="landing.html" width="100%" height="100%"></iframe>
-
+      <iframe src="landing.html" width="100%" height="100%"></iframe>
     </div>
 
     <!-- React Root -->
     <div id="root"></div>
 
-<script>
-  async function loadReactApp() {
-    document.getElementById("landing").style.display = "none";
-    const app = await import("/src/main.tsx");
-    console.log("React App Loaded:", app);
-  }
+    <!-- Load React app (bundled by Vite) -->
+    <script type="module" src="/src/main.tsx"></script>
 
-  // Auto-load React if URL is not "/"
-  if (window.location.pathname !== "/") {
-    loadReactApp();
-  }
+    <script>
+      function showReactApp() {
+        document.getElementById("landing").style.display = "none";
+        document.getElementById("root").style.display = "block";
+      }
 
-  // Listen for message from landing.html
-  window.addEventListener("message", (event) => {
-    if (event.data.action === "enterApp") {
-      loadReactApp();
-    }
-  });
-</script>
+      // Auto-load React if URL is not "/"
+      if (window.location.pathname !== "/") {
+        showReactApp();
+      }
 
+      // Listen for message from landing.html
+      window.addEventListener("message", (event) => {
+        if (event.data.action === "enterApp") {
+          showReactApp();
+        }
+      });
+    </script>
   </body>
 </html>
