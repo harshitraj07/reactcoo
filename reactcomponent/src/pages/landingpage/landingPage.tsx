@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import styles from './LandingPage.module.css';
+import styles from './landingPage.module.css';
 
 const LandingPage: React.FC = () => {
   // Refs for various elements that need JavaScript functionality
